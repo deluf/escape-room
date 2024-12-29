@@ -61,7 +61,7 @@ const char* const response_to_str[] = {
     "SERVER_FULL"
 };
 
-int encode_message(char *buffer, int size, enum ACTION action, int argc, char *argv[ARGC_MAX]) {
+int encode_message(char *buffer, int size, enum ACTION action, int argc, char *argv[]) {
 
     int argi, i, j;
 
@@ -162,7 +162,7 @@ void free_argv(char *argv[ARGC_MAX]) {
     }
 }
 
-int send_msg(int sd, enum ACTION action, int argc, char *argv[ARGC_MAX]) {
+int send_msg(int sd, enum ACTION action, int argc, char *argv[]) {
 
     char buffer[IO_BUFFER_SIZE];
     uint16_t n_length, h_length;

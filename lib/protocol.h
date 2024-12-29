@@ -110,7 +110,7 @@ void free_argv(char *argv[ARGC_MAX]);
  * Invia un messaggio sul socket *sd* seguendo il protocollo descritto sopra.
  * In caso di errore ritorna -1, 0 altrimenti.
  */ 
-int send_msg(int sd, enum ACTION action, int argc, char *argv[ARGC_MAX]);
+int send_msg(int sd, enum ACTION action, int argc, char *argv[]);
 
 /**
  * Riceve un messaggio sul socket *sd* seguendo il protocollo descritto sopra.

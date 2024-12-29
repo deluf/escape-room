@@ -24,7 +24,7 @@ int init_rooms(void) {
     g_rooms[0].bonus = 3;
     g_rooms[0].name = "Red Teaming";
     g_rooms[0].look_msg = "Sei parte di un gruppo di hacker in una missione di red teaming, siete appena entrati nell'edificio target. Ti trovi in uno degli uffici al secondo piano. Alla tua destra c'è una ++scrivania++ di legno con sopra un **computer** ed un **router**. Vicino all'ingresso c'è una ++scatola++ di cartone con dentro un **cavo** ed una **tastiera**. Dietro di te c'è una ++libreria++. Il tuo obbiettivo è quello di sbloccare il computer e connetterlo ad internet, i tuoi compagni si occuperanno del resto.";
-   g_rooms[0].question = "Come si chiama quel software o dispositivo hardware che osserva e filtra i pacchetti in ingresso o uscita da una rete?\n  a) Antivirus\n  b) Firewall\n  c) Cookie\n  d) Router";
+    g_rooms[0].question = "Come si chiama quel software o dispositivo hardware che osserva e filtra i pacchetti in ingresso o uscita da una rete?\n  a) Antivirus\n  b) Firewall\n  c) Cookie\n  d) Router";
     g_rooms[0].answer = "b"; 
     g_rooms[0].n_locations = 3;
     g_rooms[0].n_tokens = 3;

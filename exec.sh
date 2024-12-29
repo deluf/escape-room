@@ -5,10 +5,10 @@ make
 read -p "Compilazione eseguita. Premi invio per eseguire... "
 
 # Esecuzione del server sulla porta 4242
-gnome-terminal --geometry 190x33+0+9999 -x sh -c "./server 4242; exec bash"
+gnome-terminal --geometry 190x33+0+9999 -- "./server 4242"
 
 # Esecuzione del client (comunica sulla porta 4242)
-gnome-terminal --geometry 93x33+0+0 -x sh -c "./client; exec bash"
+gnome-terminal --geometry 93x33+0+0 -- "./client"
 
 # Esecuzione del terzo device (sempre un client, sempre sulla porta 4242)
-gnome-terminal --geometry 93x33+9999+0 -x sh -c "./client; exec bash"
+gnome-terminal --geometry 93x33+9999+0 -- "./client"
